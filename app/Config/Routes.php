@@ -5,6 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index'); // Rute halaman utama
-$routes->get('/product/insert', 'ProductController::insertProduct'); // Rute untuk menambahkan produk
-$routes->get('/product/view', 'ProductController::readProduct'); // Rute untuk melihat produk
+$routes->get('/', 'Home::index');
+
+$routes->get('readproduct', 'ProductController::readProduct');
+$routes->get('insertproduct', 'ProductController::insertProduct');
+$routes->get('edit-product/(:any)', 'ProductController::getProduct/$1');
+$routes->post('update-product/(:any)', 'ProductController::updateProduct/$1');
+$routes->get('delete-product/(:any)', 'ProductController::deleteProduct/$1');

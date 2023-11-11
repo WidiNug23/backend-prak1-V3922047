@@ -1,0 +1,15 @@
+{
+    "nama_depan" : "Yanto",
+    "umur" : 40,
+    "alamat" : [
+        {   
+            "id" : 1,
+            "no_rumah" : 100,
+            "jalan" : "mangga"
+        },
+        {
+            "no_rumah" : 100,
+            "jalan" : "mangga"
+        }
+    ]
+}
